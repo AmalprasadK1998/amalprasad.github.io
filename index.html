@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for About section */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .about-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .about-heading {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #000000;
+            object-fit: contain;
+            margin-bottom: 30px;
+        }
+        .about-text {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        /* Custom CSS for Projects section */
+        .projects-section {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .projects-heading {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .project-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .project-card .card-body {
+            padding: 20px;
+        }
+        .project-card .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .project-card .card-text {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .project-card .btn {
+            margin-right: 10px;
+        }
+
+
+         /* Custom CSS for Skills section */
+         .skills-section {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .skills-heading {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .skill-card {
+            width: 250px;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .skill-card img {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+        .skill-card .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .skill-card .card-text {
+            color: #666;
+            margin: 0 20px 20px;
+        }
+        .skill-card .btn {
+            margin-bottom: 20px;
+        }
+
+        /* Custom CSS for Contact Me section */
+        .contact-section {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #343a40;
+            color: #fff;
+        }
+        .contact-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            margin-bottom: 40px;
+        }
+        .contact-info i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons .btn {
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            background-color: #e83e8c;
+            border: none;
+        }
+        .social-icons .btn i {
+            font-size: 24px;
+            color: #fff;
+        }
+        .social-icons .btn:hover {
+            opacity: 0.8;
+        }
+
+         /* Custom CSS for sticky navigation */
+         body {
+            position: relative;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: #fff;
+        }
+        .navbar a:hover {
+            color: #e83e8c;
+        }
+        section {
+            padding-top: 80px; /* Adjust this value based on your navigation bar height */
+        }
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="about-heading">About</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="images/WhatsApp Image 2024-05-02 at 23.09.32.jpeg" alt="Profile Picture" class="profile-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about-text">
+                    <p style="color: black;">
+                        Myself,<b style="color: red;"><i>Amal Prasad</i></b>,a data enthusiast. I'm passionate about data and its power to drive informed decision-making. 
+                        As a data enthusiast/analyst, I thrive on uncovering insights from complex datasets to help businesses make strategic decisions 
+                        and optimize performance. With a background in Mathematics,I enjoy tackling challenges and turning raw data into actionable insights.
+                    </p>
+                    <p style="color: black;">
+                        I'm excited about the endless possibilities that data holds and eager to contribute my skills to any business problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="projects-heading">Some of my Projects</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="images/movie-recommendation.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Recommender System</h5>
+                        <p class="card-text">
+                            Implemented a movie recommender system using TMDB movies dataset of around 6000 movies. 
+                            This machine learning system filters movies based on the "cosine similarity" of the contents(movie vectors) and recommends the top 4 similar movies. 
+                            "Bag of words" technique was used for vectorization of text data. The system was deployed using Streamlit library.
+                        </p>
+                        <a href="https://content-based-movie-recommender.streamlit.app/"
+                        class="btn btn-primary">Visit</a>
+                        <a href="https://github.com/AmalprasadK1998/content-based-movie-recommender.git" 
+                        class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="images/image_caption.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Caption generator</h5>
+                        <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="images/pizza.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza sales analysis using SQL</h5>
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="skills-heading">Skills</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="card skill-card">
+                    <img src="images/python_icon.jpg" class="card-img-top" alt="Python Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card skill-card">
+                    <img src="images/data-visualization.webp" class="card-img-top" alt="Data Visualization Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card skill-card">
+                    <img src="images/SQL.png" class="card-img-top" alt="SQL Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card skill-card">
+                    <img src="images/power bi.jfif" class="card-img-top" alt="BI tools">
+                    <div class="card-body">
+                        <h5 class="card-title">BI tools</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="contact-heading">Contact Me</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center contact-info">
+            <div class="col-lg-6">
+                <p><i class="fas fa-envelope"></i> amalprasadk1998@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 7034932769</p>
+            </div>
+        </div>
+        <div class="row justify-content-center social-icons">
+            <div class="col-lg-6">
+                <a href="https://www.linkedin.com/in/amal-prasad-b776aa26a/" class="btn" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                <img src="images/linkedin-logo.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+                <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://leetcode.com/u/Amal_prasad/" class="btn" data-toggle="tooltip" data-placement="top" title="Leetcode">
+                <img src="images/leetcode.png" alt="Leetcode" style="width: 50px; height: 50px;">
+                <i class="fab fa-leetcode"></i>
+                </a>
+
+                <a href="https://www.instagram.com/vknsql007/" class="btn" data-toggle="tooltip" data-placement="top" title="instagram">
+                    <img src="images/instagram-logo-5EF61FA410-seeklogo.com.png" alt="instagram" style="width: 50px; height: 50px;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/AmalprasadK1998" class="btn" data-toggle="tooltip" data-placement="top" title="github">
+                    <img src="images/github_logo.png" alt="github" style = "width: 50px; height: 50px;">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://twitter.com/AmalPra57091816" class="btn" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <img src="images/xpng.webp" alt="twitter" style="width: 50px; height: 50px;" >
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@psychopedia1631" class="btn" data-toggle="tooltip" data-placement="top" title="YouTube">
+                    <img src="images/youtube_logo_icon_187614.png" alt="youtube" style="width: 50px; height: 50px;" >
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Bootstrap JS and dependencies (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Initialize Bootstrap tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+</body>
+</html>
